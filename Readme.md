@@ -1,4 +1,4 @@
-This stuff here will generate a nice resume for you based on your LinkedIn data. You will need to add, subtract, or shuffle some of this around to get it how you want it. Based off some stuff that openfly (http://www.github.com/mjoyce) wrote, but heavily modified.
+This stuff here will generate a nice resume for you based on your LinkedIn data. You will need to add, subtract, or shuffle some of this around to get it how you want it. Based off some stuff that Matt Joyce (http://www.github.com/openfly) wrote, but heavily modified.
 
 Here is my scratchpad list of dependencies I had to resolve in OS X Mountain Lion to get this working. If you run the script, your error messages will usually be descriptive enough to get you to the next step.
 

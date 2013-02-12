@@ -43,7 +43,9 @@ ImportError: No module named oauth2
 -----
 
  $ git clone https://github.com/defunkt/pystache.git
+ 
  $ cd pystache
+ 
  $ sudo python ./setup.py install
 
 -----
@@ -53,11 +55,12 @@ ImportError: No module named oauth2
 -----
 
  $ export PATH=/fink-sw/lib:$PATH
+ 
  $ export PATH=/fink-sw/bin:$PATH
 
 -----
 
-easy_install linkedin-api-json-client
+ $ easy_install linkedin-api-json-client
 
 -----
 

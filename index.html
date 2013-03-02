@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Master Resume Generator by jackiesingh</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Master Resume Generator</h1>
+        <p>Python hackery to generate a beautiful resume on demand via the LinkedIn API</p>
+
+        <p class="view"><a href="https://github.com/jackiesingh/Master-Resume">View the Project on GitHub <small>jackiesingh/Master-Resume</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/jackiesingh/Master-Resume/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/jackiesingh/Master-Resume/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/jackiesingh/Master-Resume">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>This stuff here will generate a nice resume for you based on your LinkedIn data. You will need to add, subtract, or shuffle some of this around to get it how you want it. Based off some stuff that Matt Joyce (<a href="http://www.github.com/openfly">http://www.github.com/openfly</a>) wrote, but heavily modified.</p>
+
+<p>Here is my scratchpad list of dependencies I had to resolve in OS X Mountain Lion to get this working. If you run the script, your error messages will usually be descriptive enough to get you to the next step.</p>
+
+<hr><p>$ ./get_lnkd_workhistory.py 
+Traceback (most recent call last):
+  File "./get_lnkd_workhistory.py", line 3, in 
+    import Image
+ImportError: No module named Image</p>
+
+<p>$ brew install jpeg
+Warning: It appears you have MacPorts or Fink installed.
+Software installed with other package managers causes known problems for
+Homebrew. If a formula fails to build, uninstall MacPorts/Fink and try again.
+Error: jpeg-8d already installed</p>
+
+<hr><p><a href="http://appelfreelance.com/2010/06/libjpeg-pil-snow-leopard-python2-6-_jpeg_resync_to_restart/">http://appelfreelance.com/2010/06/libjpeg-pil-snow-leopard-python2-6-_jpeg_resync_to_restart/</a></p>
+
+<hr><p>$ python selftest.py 
+57 tests passed.</p>
+
+<hr><p>$ ./get_lnkd_workhistory.py 
+Traceback (most recent call last):
+  File "./get_lnkd_workhistory.py", line 7, in 
+    import oauth2 as oauth
+ImportError: No module named oauth2</p>
+
+<p>$ sudo easy_install -U setuptools</p>
+
+<p>$ easy_install oauth2</p>
+
+<hr><p>$ git clone <a href="https://github.com/defunkt/pystache.git">https://github.com/defunkt/pystache.git</a></p>
+
+<p>$ cd pystache</p>
+
+<p>$ sudo python ./setup.py install</p>
+
+<hr><p>$ easy_install simplejson</p>
+
+<hr><p>$ export PATH=/fink-sw/lib:$PATH</p>
+
+<p>$ export PATH=/fink-sw/bin:$PATH</p>
+
+<hr><p>$ easy_install linkedin-api-json-client</p>
+
+<hr>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/jackiesingh">jackiesingh</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
